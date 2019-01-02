@@ -1,15 +1,18 @@
 {
-    "emmet.includeLanguages": {
+  "editor.tabSize": 2,
+  "editor.fontSize": 11,
+  "editor.fontWeight": "500",
+  "workbench.colorCustomizations": {
+      "activityBar.background": "#2a2a2e",
+      "editor.background": "#2a2a2e",
+      "editor.selectionBackground": "#474747"
+  },
+  "editor.detectIndentation": false,
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Firefox Dark",
+  "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "editor.tabSize": 2,
-    "editor.fontSize": 14,
-    "editor.fontWeight": "500",
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#000000",
-        "editor.background": "#0c0b0b",
-        "editor.selectionBackground": "#6b6b6b"
-    },
-    "editor.detectIndentation": false
+  },
+  "emmet.triggerExpansionOnTab": true
 }

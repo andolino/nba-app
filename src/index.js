@@ -4,16 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 import Routes from './routes';
 
-
 class App extends Component{
-    render(){
-        return(
-          <BrowserRouter>
-            <Routes/>
-          </BrowserRouter>
-        );
-    }
+  render(){
+    return(
+      <BrowserRouter>
+        <Routes/>
+      </BrowserRouter>
+    );
+  }
 }
-
 
 ReactDOM.render(<App />, document.querySelector('#root'));
