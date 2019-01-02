@@ -3,6 +3,8 @@ import style from './header.css';
 import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import SideNav from './Sidenav/sidenav';
+import { URL } from '../../config'
+
 
 const Header = (props) => {
 
@@ -22,7 +24,7 @@ const Header = (props) => {
   const logo = () => {
     return (
       <Link to="/">
-        <img src="/images/nba_logo.png" className={style.logo} alt="nbs logo"/>
+        <img src={`${URL}/images/nba_logo.png`} className={style.logo} alt="nbs logo"/>
       </Link>
     );
   }
