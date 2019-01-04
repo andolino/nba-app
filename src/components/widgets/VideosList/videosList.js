@@ -53,7 +53,7 @@ class VideoList extends Component {
     let template = null;
     switch (type) {
       case 'card':
-        template = <VideoTemplate videos={this.state.videos} teams={this.state.teams} />
+        template = <VideoTemplate articles={this.state.videos} teams={this.state.teams} />
         break;
       default:
         template = null;

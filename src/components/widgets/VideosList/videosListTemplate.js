@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import CardInfo from '../CardInfo/CardInfo';
 
 const videoList_Template = (props) => {
-  return props.videos.map((item, i) => (
-    <Link to={`/videos/${item.id}`} key={i}>
+  return props.articles.map((item, i) => (
+    <Link to={`/articles/${item.id}`} key={i}>
       <div className={styles.videoListItem_wrapper}>
           <div className={styles.left}
               style={{
