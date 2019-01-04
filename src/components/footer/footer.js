@@ -12,7 +12,7 @@ const Footer = () => {
           <img src={`${URL}/images/nba_logo.png`} className={style.logo} alt="nbs logo"/>      
         </Link>
         <div className={style.right}>
-          @NBA {CURRENT_YR} All rights reserveds.
+          @NBA {CURRENT_YR} All rights reserve.
         </div>
       </div>      
     </div>
