@@ -24,6 +24,11 @@
     transition: all .5s ease-in;
 }
 
+.videosListWrapper .left {
+  width: 90px;
+  height: 90px;
+}
+
 .newsList_wrapper_enter {
     opacity:1;
     transform: translateX(0%)

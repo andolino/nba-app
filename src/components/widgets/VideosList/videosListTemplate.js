@@ -5,7 +5,7 @@ import CardInfo from '../CardInfo/CardInfo';
 
 const videoList_Template = (props) => {
   return props.articles.map((item, i) => (
-    <Link to={`/articles/${item.id}`} key={i}>
+    <Link to={`/videos/${item.id}`} key={i}>
       <div className={styles.videoListItem_wrapper}>
           <div className={styles.left}
               style={{

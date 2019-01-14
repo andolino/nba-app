@@ -1,9 +1,20 @@
 import React from 'react';
+import TeamInfo from '../../elements/teamInfo';
 
-const header = () => {
+const header = (props) => {
+
+  
+
+  const teamNfo = (team) => {
+    return team ? 
+          ( <TeamInfo team={team} /> ) 
+          : null
+          
+  }
+
   return (
     <div>
-      Header
+      {teamNfo(props.teamData)}
     </div>
   );
 };

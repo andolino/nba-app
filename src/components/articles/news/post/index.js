@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { URL } from '../../../../config';
 import styles from '../../articles.css';
+import Header from './header';
 
 class NewsArticles extends Component {
 
@@ -27,12 +28,31 @@ class NewsArticles extends Component {
   }
 
   render() {
-    console.log(this.state);
+    const article = this.state.article;
+    const team = this.state.team;
+    
     return (
-      <div>
-        
+      <div className={styles.artcleWrapper}>
+        <Header
+          teamData={team[0]}
+          date={article.date}
+          author={article.author}
+        />
+        <div className={styles.articleBody}>
+          <h1>{article.title}</h1>
+          <div 
+            className={styles.articleImage} 
+            style={{
+              background: `url('/images/articles/${article.image}')`
+            }}
+          ></div>
+          <div className={styles.articleText}>
+            {article.body}
+          </div>
+        </div>
       </div>
     );
+  
   }
 
 }

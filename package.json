@@ -55,12 +55,11 @@
   "scripts": {
     "start": "node scripts/start.js ",
     "dev-serv": "json-server --watch db.json --port 3006",
-    "dev-serv-live": "json-server https://andolino.github.io/db/db.json",
+    "dev-serv-live": "json-server --watch https://andolino.github.io/db/db.json",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "deploy-live": "gh-pages -d dev-serv-live"
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [

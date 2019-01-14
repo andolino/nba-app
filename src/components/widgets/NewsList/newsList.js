@@ -54,7 +54,7 @@ class NewsList extends Component{
             timeout={500}
             key={i}
           >
-            <div >
+            <div>
               <div className={styles.newslist_item}>
                 <Link to={`articles/${item.id}`}>
                   <CardInfo teams={this.state.team} teamid={item.team} date={item.date} />
@@ -64,6 +64,35 @@ class NewsList extends Component{
             </div>  
           </CSSTransition>
         ));
+        break;
+      case 'thumb':
+      template = this.state.items.map((item, i) => (
+        <CSSTransition
+          classNames={{
+            enter: styles.newsList_wrapper,
+            enterActive: styles.newsList_wrapper_enter
+          }}
+          timeout={500}
+          key={i}
+        >
+          <div>
+            <div className={styles.newslist_item}>
+              <Link to={`articles/${item.id}`}>
+                <div className={styles.videosListWrapper}>
+                  <div className={styles.left}
+                      style={{
+                          background:`url(/images/videos/${item.image})`
+                      }}
+                  >
+                  </div>
+                  <CardInfo teams={this.state.team} teamid={item.team} date={item.date} />
+                  <h2>{item.title}</h2>
+                </div>
+              </Link>
+            </div>
+          </div>  
+        </CSSTransition>
+      ));
         break;
       default:
         template = null;
@@ -79,7 +108,8 @@ class NewsList extends Component{
     });
   }
 
-  render(){
+  render() {
+    console.log(this.state.items);
     return(
       <div>
         <TransitionGroup
